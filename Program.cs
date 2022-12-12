@@ -88,6 +88,12 @@
             if(FRONT_position <= REAR_position)
             {
                 /* travers the queue till the last element present in the array.*/
+                while(FRONT_position <= REAR_position)
+                {
+                    Console.Write(queue_array[FRONT_position] + " ||");
+                    FRONT_position++;
+                }
+                Console.WriteLine();
             }
         }
     }
