@@ -84,6 +84,11 @@
                 Console.WriteLine("Queue is empty.\n");
                 return;
             }
+            Console.WriteLine("\nElements in the queue are..........\n");
+            if(FRONT_position <= REAR_position)
+            {
+                /* travers the queue till the last element present in the array.*/
+            }
         }
     }
     internal class Program
