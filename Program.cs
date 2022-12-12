@@ -42,6 +42,17 @@
                 }
             }
             /* Once the position of REAR is determined, the element is added at  it's proper place.*/
+            queue_array[REAR] = element;
+        }
+        public void remove(int element) 
+        {
+            /* Checks wheather the queue is empty.*/
+            if(FRONT == - 1)
+            {
+                Console.WriteLine("\nQueue is empty.\n");
+                return;
+            }
+            Console.WriteLine("\nThe element deleted.");
         }
     }
     internal class Program
