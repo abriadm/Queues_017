@@ -44,7 +44,7 @@
             /* Once the position of REAR is determined, the element is added at  it's proper place.*/
             queue_array[REAR] = element;
         }
-        public void remove(int element) 
+        public void remove() 
         {
             /* Checks wheather the queue is empty.*/
             if(FRONT == - 1)
@@ -120,7 +120,7 @@
         
         static void Main(string[] args)
         {
-            Queues queues= new Queues();
+            Queues queue= new Queues();
             char ch;
             while(true)
             {
@@ -132,7 +132,38 @@
                     Console.WriteLine("3. Display values.");
                     Console.WriteLine("4. Exit.");
                     Console.Write("\nEnter your choice: ");
-
+                    ch = Convert.ToChar(Console.Read());
+                    Console.WriteLine();
+                    switch(ch)
+                    {
+                        case '1':
+                            {
+                                Console.Write("Enter a number: ");
+                                int num = Convert.ToInt32(Console.Read());
+                                Console.WriteLine();
+                                queue.insert(num);
+                                break;
+                            }
+                        case '2':
+                            {
+                                queue.remove();// parameter
+                                break;
+                            }
+                        case '3':
+                            {
+                                queue.display();
+                                break;
+                            }
+                        case '4':
+                            return;
+                        default:
+                            Console.WriteLine("Invalid option !!");
+                            break;
+                    }
+                }
+                catch(Exception e) 
+                {
+                    Console.WriteLine("Checks for the value entered");
                 }
             }
         }
