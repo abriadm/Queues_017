@@ -120,8 +120,21 @@
         
         static void Main(string[] args)
         {
-            
+            Queues queues= new Queues();
+            char ch;
+            while(true)
+            {
+                try
+                {
+                    Console.WriteLine("\n||-----Menu-----||\n");
+                    Console.WriteLine("1. Implement insert operation.");
+                    Console.WriteLine("2. Implement delete operation.");
+                    Console.WriteLine("3. Display values.");
+                    Console.WriteLine("4. Exit.");
+                    Console.Write("\nEnter your choice: ");
 
+                }
+            }
         }
     }
 }
