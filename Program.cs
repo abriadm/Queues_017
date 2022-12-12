@@ -100,10 +100,18 @@
                 /* Traverses the queue till the last positon of the array.*/
                 while(FRONT_position <= max - 1)
                 {
-                    Console.Write(queue_array[FRONT_position] + );
+                    Console.Write(queue_array[FRONT_position] + "  ||");
                     FRONT_position++;
                 }
                 /* Set the FRONT position to the first element of the array.*/
+                FRONT_position = 0;
+                /* Traverses the array till the last element present in the queue.*/
+                while(FRONT_position <= REAR_position)
+                {
+                    Console.WriteLine(queue_array[FRONT_position] + "  ||");
+                    FRONT_position++;
+                }
+                Console.WriteLine();
             }
         }
     }
